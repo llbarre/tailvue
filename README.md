@@ -18,6 +18,10 @@ Check it out at:
 
 <https://tailview.netlify.app>
 
+## Make it yours
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/llbarre/tailvue"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
+
 ## Installation
 
 Install my-project with npm
