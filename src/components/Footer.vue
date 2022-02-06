@@ -6,14 +6,14 @@
                 <nav
                     class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6 mb-4"
                 >
-                    <a
-                        href="#"
+                    <router-link
+                        to="/"
                         class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >Home</a>
-                    <a
-                        href="#"
+                    >Home</router-link>
+                    <router-link
+                        to="/about"
                         class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >About</a>
+                    >About</router-link>
                 </nav>
                 <!-- nav - end -->
 
