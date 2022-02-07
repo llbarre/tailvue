@@ -18,7 +18,10 @@ const routes = [
       title: "TailVue › About",
     },
   },
-  { path: "/:pathMatch(.*)*", component: Home },
+  {
+    path: "/:pathMatch(.*)*",
+    component: () => import("../components/404.vue"),
+  },
 ];
 
 const router = createRouter({
