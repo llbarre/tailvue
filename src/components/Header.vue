@@ -41,14 +41,14 @@
           class="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"
         >
           <button
-            @click="toggleModes"
+            @click="toggleDark"
             id="theme-toggle"
             type="button"
             class="rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
           >
             <svg
-              ref="themeToggleDarkIcon"
-              class="hidden h-5 w-5"
+              v-if="isDark"
+              class="h-5 w-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +58,8 @@
               />
             </svg>
             <svg
-              ref="themeToggleLightIcon"
-              class="hidden h-5 w-5"
+              v-else
+              class="h-5 w-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,8 @@
 </template>
 
 <script setup>
-import { useDarkMode } from "../composables/useDarkMode";
+import { useDark, useToggle } from "@vueuse/core";
+
 import {
   Popover,
   PopoverButton,
@@ -155,8 +156,8 @@ import {
   PopoverOverlay,
 } from "@headlessui/vue";
 
-const { toggleModes, themeToggleDarkIcon, themeToggleLightIcon } =
-  useDarkMode();
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 </script>
 
 <style lang="css" scoped>
