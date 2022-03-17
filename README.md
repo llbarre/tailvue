@@ -7,7 +7,7 @@ Complete with the essentials:
 - 🔥 Vue 3 with `<script setup>` - [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup)
 - 🎢 [Vue Router 4.x](https://next.router.vuejs.org/guide/) with dynamic route titles
 - 🍍 [Pinia](https://pinia.vuejs.org/) for state management
-- 🌗 Dark mode support with composables example
+- 🌗 Dark mode support with [VueUse](https://vueuse.org/core/usedark/#usedark)
 - 🚀 [Vite](https://vitejs.dev/) for ultra fast development
 - 💪🏻 [Tailwindcss](https://tailwindcss.com/) with Inter Font and [Flowrift](https://about.flowrift.com/) components
 - 💅🏻 Prettier and [Prettier Plugin Tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
