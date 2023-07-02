@@ -24,8 +24,15 @@
 
         <!-- nav - start -->
         <nav class="hidden gap-12 lg:flex">
-          <router-link to="/" active-class="nav-link-active" class="nav-link">Home</router-link>
-          <router-link to="/about" active-class="nav-link-active" class="nav-link">About</router-link>
+          <router-link to="/" active-class="nav-link-active" class="nav-link"
+            >Home</router-link
+          >
+          <router-link
+            to="/about"
+            active-class="nav-link-active"
+            class="nav-link"
+            >About</router-link
+          >
         </nav>
         <!-- nav - end -->
 
@@ -46,7 +53,9 @@
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              />
             </svg>
             <svg
               v-else
@@ -66,12 +75,14 @@
           <a
             href="#"
             class="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:text-indigo-500 focus-visible:ring active:text-indigo-600 dark:text-gray-300 md:text-base"
-          >Sign in</a>
+            >Sign in</a
+          >
 
           <a
             href="#"
             class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
-          >Sign up</a>
+            >Sign up</a
+          >
         </div>
 
         <!-- Mobile menu button -->
@@ -113,10 +124,20 @@
             >
               <div class="grid w-64 min-w-max grid-cols-1 gap-4 p-4">
                 <PopoverButton>
-                  <router-link active-class="nav-link-active" class="nav-link" to="/">Home</router-link>
+                  <router-link
+                    active-class="nav-link-active"
+                    class="nav-link"
+                    to="/"
+                    >Home</router-link
+                  >
                 </PopoverButton>
                 <PopoverButton>
-                  <router-link active-class="nav-link-active" class="nav-link" to="/about">About</router-link>
+                  <router-link
+                    active-class="nav-link-active"
+                    class="nav-link"
+                    to="/about"
+                    >About</router-link
+                  >
                 </PopoverButton>
               </div>
             </PopoverPanel>
@@ -143,10 +164,10 @@ const isDark = useDark();
 const toggleDark = useToggle(isDark);
 </script>
 
-<style lang="css" scoped>
+<style lang="postcss" scoped>
 .nav-link {
-  @apply text-lg text-lg font-semibold font-semibold text-gray-600 text-gray-600 transition transition duration-100
-duration-100 hover:text-indigo-500 hover:text-indigo-500 active:text-indigo-700 active:text-indigo-700 dark:text-gray-400 dark:hover:text-indigo-500;
+  @apply text-lg font-semibold text-gray-600 transition  duration-100
+ hover:text-indigo-500  active:text-indigo-700 dark:text-gray-400 dark:hover:text-indigo-500;
 }
 .nav-link-active {
   @apply text-indigo-700 dark:text-indigo-400;

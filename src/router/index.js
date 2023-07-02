@@ -1,28 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../components/Home.vue";
-
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-    meta: {
-      title: "TailVue › Home",
-    },
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: () => import("../components/About.vue"),
-    meta: {
-      title: "TailVue › About",
-    },
-  },
-  {
-    path: "/:pathMatch(.*)*",
-    component: () => import("../components/404.vue"),
-  },
-];
+import routes from '~pages'
 
 const router = createRouter({
   history: createWebHistory(),
