@@ -31,16 +31,6 @@ Install my-project with npm
   cd my-project
 ```
 
-```
-{
-  "scripts": {
-    "dev": "vite", // start dev server, aliases: `vite dev`, `vite serve`
-    "build": "vite build", // build for production
-    "preview": "vite preview" // locally preview production build
-  }
-}
-```
-
 ## Credits
 
 Tailwind components powered by the amazing [Flowrift](https://about.flowrift.com/)
