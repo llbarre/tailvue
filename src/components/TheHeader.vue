@@ -41,7 +41,7 @@
           class="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"
         >
           <button
-            @click="toggleDark()"
+           @click="toggleDark()"
             id="theme-toggle"
             type="button"
             class="rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
@@ -151,17 +151,12 @@
 </template>
 
 <script setup>
-import { useDark, useToggle } from "@vueuse/core";
-
 import {
   Popover,
   PopoverButton,
   PopoverPanel,
   PopoverOverlay,
 } from "@headlessui/vue";
-
-const isDark = useDark();
-const toggleDark =  useToggle(isDark);
 </script>
 
 <style lang="postcss" scoped>

@@ -22,6 +22,7 @@ export default defineConfig({
        dirs: [
          './src/composables',
        ],
+       vueTemplate: true,
      }),
 
      // https://github.com/antfu/vite-plugin-components
