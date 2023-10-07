@@ -1,5 +1,4 @@
 [build.environment]
-  NPM_FLAGS = "--version"
   NODE_VERSION = "18"
 
 [build]
