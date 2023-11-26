@@ -1,9 +1,7 @@
-import { createRouter, createWebHistory } from "vue-router";
-import routes from '~pages'
+import { createRouter, createWebHistory } from "vue-router/auto";
 
 const router = createRouter({
   history: createWebHistory(),
-  routes, // short for `routes: routes`
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       return {
