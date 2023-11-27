@@ -1,5 +1,5 @@
 {
-  "name": "vue-tailwind-bp",
+  "name": "tailvue",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --port 3333 --host --open",
