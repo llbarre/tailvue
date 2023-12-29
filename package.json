@@ -11,13 +11,13 @@
   "type": "module",
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
-    "@vueuse/core": "^10.7.0",
+    "@vueuse/core": "^10.7.1",
     "pinia": "^2.1.7",
-    "vue": "^3.3.13",
+    "vue": "^3.4.0",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.2",
+    "@vitejs/plugin-vue": "^4.6.1",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
     "prettier": "^2.8.8",
