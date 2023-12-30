@@ -1,3 +1,12 @@
+<script setup>
+import {
+  Popover,
+  PopoverButton,
+  PopoverOverlay,
+  PopoverPanel,
+} from "@headlessui/vue"
+</script>
+
 <template>
   <div class="bg-white dark:bg-gray-900 lg:pb-4">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -24,15 +33,16 @@
 
         <!-- nav - start -->
         <nav class="hidden gap-12 lg:flex">
-          <router-link to="/" active-class="nav-link-active" class="nav-link"
-            >Home</router-link
-          >
+          <router-link to="/" active-class="nav-link-active" class="nav-link">
+            Home
+          </router-link>
           <router-link
             to="/about"
             active-class="nav-link-active"
             class="nav-link"
-            >About</router-link
           >
+            About
+          </router-link>
         </nav>
         <!-- nav - end -->
 
@@ -41,10 +51,10 @@
           class="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"
         >
           <button
-           @click="toggleDark()"
             id="theme-toggle"
             type="button"
             class="rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+            @click="toggleDark()"
           >
             <svg
               v-if="isDark"
@@ -75,18 +85,16 @@
           <a
             href="#"
             class="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:text-indigo-500 focus-visible:ring active:text-indigo-600 dark:text-gray-300 md:text-base"
-            >Sign in</a
-          >
+          >Sign in</a>
 
           <a
             href="#"
             class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
-            >Sign up</a
-          >
+          >Sign up</a>
         </div>
 
         <!-- Mobile menu button -->
-        <Popover class="relative lg:hidden" v-slot="{ open }">
+        <Popover v-slot="{ open }" class="relative lg:hidden">
           <PopoverButton>
             <button
               type="button"
@@ -128,16 +136,18 @@
                     active-class="nav-link-active"
                     class="nav-link"
                     to="/"
-                    >Home</router-link
                   >
+                    Home
+                  </router-link>
                 </PopoverButton>
                 <PopoverButton>
                   <router-link
                     active-class="nav-link-active"
                     class="nav-link"
                     to="/about"
-                    >About</router-link
                   >
+                    About
+                  </router-link>
                 </PopoverButton>
               </div>
             </PopoverPanel>
@@ -149,15 +159,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import {
-  Popover,
-  PopoverButton,
-  PopoverPanel,
-  PopoverOverlay,
-} from "@headlessui/vue";
-</script>
 
 <style lang="postcss" scoped>
 .nav-link {

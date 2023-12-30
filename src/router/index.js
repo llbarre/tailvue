@@ -1,18 +1,19 @@
-import { createRouter, createWebHistory } from "vue-router/auto";
+import { createRouter, createWebHistory } from "vue-router/auto"
 
 const router = createRouter({
   history: createWebHistory(),
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to, _from, _savedPosition) {
     if (to.hash) {
       return {
         selector: to.hash,
         behavior: "smooth",
-      };
-    } else {
-      return { top: 0 };
+      }
+    }
+    else {
+      return { top: 0 }
     }
   },
-});
+})
 
 router.beforeEach((to, from, next) => {
   // This goes through the matched routes from last to first, finding the closest route with a title.
@@ -21,13 +22,13 @@ router.beforeEach((to, from, next) => {
   const nearestWithTitle = to.matched
     .slice()
     .reverse()
-    .find((r) => r.meta && r.meta.title);
+    .find(r => r.meta && r.meta.title)
 
   // If a route with a title was found, set the document (page) title to that value.
-  if (nearestWithTitle) {
-    document.title = nearestWithTitle.meta.title;
-  }
-  next();
-});
+  if (nearestWithTitle)
+    document.title = nearestWithTitle.meta.title
 
-export default router;
+  next()
+})
+
+export default router

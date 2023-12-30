@@ -1,9 +1,9 @@
-import { defineConfig } from "vite";
-import { URL, fileURLToPath } from "node:url";
-import vue from "@vitejs/plugin-vue";
-import AutoImport from "unplugin-auto-import/vite";
-import Components from "unplugin-vue-components/vite";
-import VueRouter from "unplugin-vue-router/vite";
+import { URL, fileURLToPath } from "node:url"
+import { defineConfig } from "vite"
+import vue from "@vitejs/plugin-vue"
+import AutoImport from "unplugin-auto-import/vite"
+import Components from "unplugin-vue-components/vite"
+import VueRouter from "unplugin-vue-router/vite"
 import { VueRouterAutoImports } from "unplugin-vue-router"
 
 // https://vitejs.dev/config/
@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     // https://github.com/posva/unplugin-vue-router
     VueRouter({
-      //options
+      // options
     }),
 
     vue(),
@@ -35,4 +35,4 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-});
+})

@@ -1,3 +1,5 @@
+<script setup></script>
+
 <template>
   <div class="bg-white py-6 dark:bg-gray-900 sm:py-8 lg:py-12">
     <div class="mx-auto max-w-screen-md px-4 md:px-8">
@@ -15,15 +17,14 @@
         no meaning however looks very similar to real text. The important factor
         when using filler text is that the text looks realistic otherwise it
         will not look very good.
-        <br />
-        <br />This is a section of some simple filler text, also known as
+        <br>
+        <br>This is a section of some simple filler text, also known as
         placeholder text. It shares some characteristics of a real written text
         but is
         <a
           href="#"
           class="text-indigo-500 underline transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-          >random</a
-        >
+        >random</a>
         or otherwise generated. It may be used to display a sample of fonts or
         generate text for testing. Filler text is dummy text which has no
         meaning however looks very similar to real text.
@@ -67,7 +68,7 @@
           loading="lazy"
           alt="Photo by Minh Pham"
           class="h-full w-full object-cover object-center"
-        />
+        >
       </div>
 
       <h2
@@ -86,7 +87,5 @@
     </div>
   </div>
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped></style>

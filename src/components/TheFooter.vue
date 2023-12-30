@@ -1,3 +1,5 @@
+<script setup></script>
+
 <template>
   <div class="bg-white pt-4 dark:bg-gray-900 sm:pt-10 lg:pt-12">
     <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -11,13 +13,15 @@
           <router-link
             to="/"
             class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-            >Home</router-link
           >
+            Home
+          </router-link>
           <router-link
             to="/about"
             class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-            >About</router-link
           >
+            About
+          </router-link>
         </nav>
         <!-- nav - end -->
 
@@ -108,7 +112,5 @@
     </footer>
   </div>
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped></style>
